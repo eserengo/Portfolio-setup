@@ -34,7 +34,7 @@ body {
   left: 320px;
 }
 
-.name {
+.primarytext {
   width: 300px;
   height: 150px;
   top: 200px;
@@ -52,7 +52,7 @@ body {
   flex-grow: 0;
 }
 
-.text {
+.bodytext {
   width: 327px;
   height: 146px;
   font-style: normal;
@@ -67,7 +67,7 @@ body {
   flex: none;
 }
 
-#lets-connect {
+#supportingtext {
   width: 150px;
   height: 24px;
   font-style: normal;
@@ -82,7 +82,7 @@ body {
   left: 24px;
 }
 
-.icons {
+.socialmediaicons {
   position: relative;
   top: 570px;
   left: -18px;
