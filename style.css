@@ -464,6 +464,36 @@ body {
   color: #000;
 }
 
+#work2see-project strong {
+  width: 100px;
+  height: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000;
+}
+
+#work3see-project strong {
+  width: 100px;
+  height: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000;
+}
+
 #work1see-project strong:hover {
   color: #fff;
 }
@@ -626,21 +656,6 @@ body {
   background-color: #6070ff;
 }
 
-#work2see-project strong {
-  width: 100px;
-  height: 24px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #000;
-}
-
 #work2see-project strong:hover {
   color: #fff;
 }
@@ -801,21 +816,6 @@ body {
 
 #work3see-project:hover {
   background-color: #6070ff;
-}
-
-#work3see-project strong {
-  width: 100px;
-  height: 24px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #000;
 }
 
 #work3see-project strong:hover {
@@ -1154,7 +1154,7 @@ body {
 #javascript {
   width: 303px;
   background: #f7f7f9;
-  border-radius: 8px;  
+  border-radius: 8px;
   height: 24px;
   left: 76px;
   right: 12px;
