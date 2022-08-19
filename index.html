@@ -64,7 +64,7 @@
             <p>A daily selection of privately personalized reads; no accounts or 
             sign-ups required.</p>
           </div>
-          <div class="work1tags">
+          <div id="work1tags">
             <ul>
               <li><div id="work1tag1"><div id="work1html1">html</div></div></li>
               <li><div id="work1tag2"><div id="work1css1">css</div></div></li>
@@ -72,14 +72,14 @@
             </ul>                        
           </div>
           <div class="work1Actions">
-            <button id="work1see-project">
+            <button type="button" id="work1see-project">
               <strong>See Project</strong>
             </button>
           </div>
         </div>
       </section>
       <section class="work2">
-        <img src="./images/Snapshoot Portfolio.png" alt="Stories Snapshoot">
+        <img src="./images/SnapshootPortfolio.png" alt="Stories Snapshoot">
         <div id="block2">
           <h2>Multi-Post Stories</h2>
           <div id="work2frame">
@@ -95,7 +95,7 @@
             <p>A daily selection of privately personalized reads; no accounts or 
             sign-ups required.</p>
           </div>
-          <div class="work2tags">
+          <div id="work2tags">
             <ul>
               <li><div id="work2tag1"><div id="html2">html</div></div></li>
               <li><div id="work2tag2"><div id="css2">css</div></div></li>
@@ -103,7 +103,7 @@
             </ul>
           </div>
           <div class="work2Actions">
-              <button id="work2see-project">
+              <button type="button" id="work2see-project">
                 <strong>See Project</strong>
               </button>
           </div>
@@ -126,7 +126,7 @@
             <p>A daily selection of privately personalized reads; no accounts or 
             sign-ups required.</p>
           </div>
-          <div class="work3tags">
+          <div id="work3tags">
             <ul>
               <li><div id="work3tag1"><div id="html3">html</div></div></li>
               <li><div id="work3tag2"><div id="css3">css</div></div></li>
@@ -134,14 +134,14 @@
             </ul>                        
           </div>
           <div class="work3Actions">
-            <button id="work3see-project">
+            <button type="button" id="work3see-project">
               <strong>See Project</strong>
             </button>
           </div>
         </div>
       </section>
       <section class="work4">
-        <img src="./images/Snapshoot Portfolio.png" alt="Stories Snapshoot">
+        <img src="./images/SnapshootPortfolio.png" alt="Stories Snapshoot">
         <div id="block4">
           <h2>Multi-Post Stories</h2>
           <div id="work4frame">
@@ -156,7 +156,7 @@
           <div class="work4primary-text">
             <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
           </div>
-          <div class="work4tags">
+          <div id="work4tags">
             <ul>
               <li><div id="work4tag1"><div id="html4">html</div></div></li>
               <li><div id="work4tag2"><div id="css4">css</div></div></li>
@@ -164,7 +164,7 @@
             </ul>
           </div>
           <div class="work4Actions">
-              <button id="work4see-project">
+              <button type="button" id="work4see-project">
                 <strong>See Project</strong>
               </button>
           </div>
@@ -172,64 +172,57 @@
       </section>
     </section>
     <section class="about-myself">
-        <div class="about-myself-primary-text">
-          <h2>About Myself</h2>
-        </div>
-        <div class="about-myself-primary-bodytext">
-          <p>Hello I'm a software developer! I can help you build a product , 
-          feature or website Look through some of my work and experience! 
-          If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
-        </div>
-        <div class="about-myself-social-media-text">LET'S CONNECT</div>
-        <div class="about-myself-social-media-icons">
-          <ul>
-            <li><a href="#"><img src="./images/Vector2.svg" alt="GitHub"></a></li>
-            <li><a href="#"><img src="./images/Linkedinicon.svg" alt="Linkedin"></a></li>
-            <li><a href="#"><img src="./images/Vector3.svg" alt="Peace"></a></li>
-            <li><a href="#"><img src="./images/Vector.svg" alt="Twitter"></a></li>
-            <li><a href="#"><img src="./images/Vector1.svg" alt="Mail"></a></li>
-          </ul>
-        </div>
-        <button id="my-resume"><span>Get my resume</span></button>
+      <div class="about-myself-primary-text">
+        <h2>About Myself</h2>
+      </div>
+      <div class="about-myself-primary-bodytext">
+        <p>Hello I'm a software developer! I can help you build a product , 
+        feature or website Look through some of my work and experience! 
+        If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
+      </div>
+      <div class="about-myself-social-media-text">LET'S CONNECT</div>
+      <div id="about-myself-social-media-icons">
+        <ul>
+          <li><a href="#"><img src="./images/Vector2.svg" alt="GitHub"></a></li>
+          <li><a href="#"><img src="./images/Linkedinicon.svg" alt="Linkedin"></a></li>
+          <li><a href="#"><img src="./images/Vector3.svg" alt="Peace"></a></li>
+          <li><a href="#"><img src="./images/Vector.svg" alt="Twitter"></a></li>
+          <li><a href="#"><img src="./images/Vector1.svg" alt="Mail"></a></li>
+        </ul>
+      </div>
+      <button type="button" id="my-resume"><span>Get my resume</span></button>
       <section class="skills">
-        <span id="open-chevron">
-          <img src="./images/Icon - Chevron - Down - Larger.png" alt="">
-        </span>
         <div class="skill-list">
-          <div id="language">
-            <div id="lang">
-              <h5>Languages</h5>
-            </div>
+          <div id="ul-languages">
+            <h5>Languages</h5><span id="open-chevron"><img src="./images/Icon-Chevron-Down-Larger.png" alt="Open"></span>
+            <ul id="lang-list">
+              <li id="javascript">
+                <div id="img"><img src="./images/javascript.png" alt="Javascript"></div>
+                <div>Javascript</div>
+              </li>
+              <li id="html">
+                <div id="img1"><img src="./images/html.png" alt="HTML"></div>
+                <div>HTML</div>
+              </li>
+              <li id="css">
+                <div id="img2"><img src="./images/css.png" alt="CSS"></div>
+                <div>CSS</div>
+              </li>
+            </ul>
           </div>
-          <ul id="lang-list">
-            <li id="javascript">
-              <div id="img"><img src="./images/javascript.png" alt="Javascript"></div>
-              <div>Javascript</div>
-            </li>
-            <li id="html">
-              <div id="img1"><img src="./images/html.png" alt="HTML"></div>
-              <div>HTML</div>
-            </li>
-            <li id="css">
-              <div id="img2"><img src="./images/css.png" alt="CSS"></div>
-              <div>CSS</div>
-            </li>
-          </ul>
+          <div id="ul-frameworks">
+            <h5>Frameworks</h5><span id="upper-chevron"><img src="./images/Disabled.png" alt="Disabled"></span>
+            <ul>
+            </ul>
+            <span id="tab-1"></span>
+          </div>
+          <div id="ul-skills">
+            <h5>Skills</h5><span id="lower-chevron"><img src="./images/Disabled.png" alt="Disabled"></span>
+            <ul>
+            </ul>
+            <span id="tab-2"></span>
+          </div>
         </div>
-        <span id="upper-chevron">
-          <img src="./images/Disabled.png" alt="Disabled">
-        </span>
-        <ul id="ul-frameworks">
-          <h5>Frameworks</h5>
-        </ul>
-        <span id="separater"></span>
-        <span id="lower-chevron">
-          <img src="./images/Disabled.png" alt="Disabled">
-        </span>
-        <ul id="ul-skills">
-          <h5>Skills</h5>
-        </ul>
-        <span id="separater1"></span>
       </section>
     </section>
   </main>

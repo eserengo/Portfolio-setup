@@ -172,29 +172,7 @@ body {
   color: #172b4d;
 }
 
-#work1frame ul{
-  width: 236px;
-  height: 32px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0;
-  gap: 12px;
-  margin-top: -30px;
-  list-style-type: none;
-}
-.work1tags ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0;
-  gap: 8px;
-  width: 203px;
-  height: 24px;
-  list-style-type: none;
-}
-
-.work2tags ul {
+#work2tags ul {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -206,7 +184,7 @@ body {
   list-style-type: none;
 }
 
-.work3tags ul {
+#work3tags ul {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -218,7 +196,7 @@ body {
   height: 24px;
 }
 
-.work4tags ul {
+#work4tags ul {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -230,7 +208,30 @@ body {
   height: 24px;
 }
 
-.about-myself-social-media-icons ul {
+#work1frame ul {
+  width: 236px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+  margin-top: -30px;
+  list-style-type: none;
+}
+
+#work1tags ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  width: 203px;
+  height: 24px;
+  list-style-type: none;
+}
+
+#about-myself-social-media-icons ul {
   display: flex;
   flex-direction: row;
   padding: 0;
@@ -367,6 +368,51 @@ body {
 .work1Actions {
   width: 295px;
   height: 72px;
+}
+
+#work4see-project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 150px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  margin-top: -10px;
+  background-color: #fff;
+  transition-duration: 0.6s;
+}
+
+#work3see-project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 150px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  margin-top: -10px;
+  background-color: white;
+  transition-duration: 0.6s;
+}
+
+#work2see-project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 150px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  margin-top: -10px;
+  background-color: white;
+  transition-duration: 0.6s;
 }
 
 #work1see-project {
@@ -576,21 +622,6 @@ body {
   height: 72px;
 }
 
-#work2see-project {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  width: 150px;
-  height: 48px;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  margin-top: -10px;
-  background-color: white;
-  transition-duration: 0.6s;
-}
-
 #work2see-project:hover {
   background-color: #6070ff;
 }
@@ -766,21 +797,6 @@ body {
 .work3Actions {
   width: 295px;
   height: 72px;
-}
-
-#work3see-project {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  width: 150px;
-  height: 48px;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  margin-top: -10px;
-  background-color: white;
-  transition-duration: 0.6s;
 }
 
 #work3see-project:hover {
@@ -959,21 +975,6 @@ body {
   height: 72px;
 }
 
-#work4see-project {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  width: 150px;
-  height: 48px;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  margin-top: -10px;
-  background-color: #fff;
-  transition-duration: 0.6s;
-}
-
 #work4see-project:hover {
   background-color: #6070ff;
 }
@@ -981,7 +982,6 @@ body {
 #work4see-project strong:hover {
   color: #fff;
 }
-
 
 .about-myself {
   display: flex;
@@ -1094,14 +1094,27 @@ body {
   left: 24px;
 }
 
-
 #open-chevron {
   width: 40px;
   height: 40px;
-  float: right;
+  display: inline;
+  position: relative;
+  left: 300px;
+  bottom: 55px;
 }
 
-#language {
+#ul-languages {
+  width: 327px;
+  height: 72px;
+}
+
+#ul-frameworks {
+  width: 327px;
+  height: 72px;
+  margin-top: 300px;
+}
+
+#ul-skills {
   width: 327px;
   height: 72px;
 }
@@ -1118,7 +1131,7 @@ body {
   border: none;
 }
 
-#lang h5 {
+#ul-languages h5 {
   height: 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -1140,21 +1153,8 @@ body {
 
 #javascript {
   width: 303px;
-  height: 66.72px;
   background: #f7f7f9;
-  border-radius: 8px;
-}
-
-#img {
-  width: 48px;
-  height: 48px;
-  left: 12px;
-  align-items: center;
-  display: flex;
-  padding: 8px;
-}
-
-#javascript {
+  border-radius: 8px;  
   height: 24px;
   left: 76px;
   right: 12px;
@@ -1169,11 +1169,13 @@ body {
   color: #253858;
 }
 
-#html {
-  width: 303px;
-  height: 66.72px;
-  background: #f7f7f9;
-  border-radius: 8px;
+#img {
+  width: 48px;
+  height: 48px;
+  left: 12px;
+  align-items: center;
+  display: flex;
+  padding: 8px;
 }
 
 #img1 {
@@ -1198,14 +1200,9 @@ body {
   display: flex;
   align-items: center;
   color: #253858;
-}
-
-#css {
   width: 303px;
-  height: 66.72px;
   background: #f7f7f9;
   border-radius: 8px;
-  margin-top: 13px;
 }
 
 #img2 {
@@ -1230,9 +1227,13 @@ body {
   display: flex;
   align-items: center;
   color: #253858;
+  width: 303px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin-top: 13px;
 }
 
-#separater {
+#tab-1 {
   height: 1px;
   width: 327px;
   background: #dfe1e6;
@@ -1241,37 +1242,41 @@ body {
 #upper-chevron {
   width: 40px;
   height: 40px;
-  float: right;
+  display: inline;
+  position: relative;
+  left: 300px;
+  bottom: 65px;
 }
 
 #ul-frameworks h5 {
+  height: 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
   color: #000;
-  margin: auto;
 }
 
-#separater1 {
+#tab-2 {
   height: 1px;
   width: 327px;
   background: #dfe1e6;
 }
 
-#ul-skills h5{
+#ul-skills h5 {
+  height: 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
   color: #000;
-  margin: auto;
 }
 
 #lower-chevron {
   width: 40px;
   height: 40px;
-  float: right;
+  display: inline;
+  position: relative;
+  left: 300px;
+  bottom: 65px;
 }
