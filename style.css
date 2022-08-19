@@ -4,7 +4,7 @@ body {
   background-image: url('./images/header-shapes mobile.png');
   background-repeat: no-repeat;
   box-sizing: border-box;
-  background-position-y: 120px;
+  background-position-y: 70px;
 }
 
 .toolbar {

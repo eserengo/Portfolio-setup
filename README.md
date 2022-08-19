@@ -1,17 +1,19 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# ** Porfolio Setup**
+# ** Porfolio Setup: Finish Mobile Version **
 
 ## Description of the project.
-This the first milestone in the process of creating my portfolio website.
+For the second milestone in building the portfolio website, I will create the mobile website section where I will list my portfolio projects.
 
-The 2 sections I need to build for this project are:
-the toolbar (or header):
-the headline section (right after the header):
-
-In order to lay out the elements on the page I should use Flexbox in all 2 sections.
-You don't need to implement any functionality that requires JavaScript, like opening the menu or creating dropdowns.
-You must stick to the design as much as possible (e.g. font, colors, images, text, margins) using the templates in Figma.
+Now I will build the middle section of the mobile website. This sections of the mobile website should include:
+"Works" section
+The "About myself" section (placed after the projects and before the contact form):
+Make sure the content of the "About myself" section is aligned with flexbox.
+In order to lay out the elements in "Works" section you should use CSS Grid and Flexbox combined (it is mandatory that you use both). Use CSS Grid in the main container that contains all of the cards and use Flexbox to lay out an individual card.
+Please use ul and li for categories in "Work" section. Html, Css, and Javascript should be list items.
+Please use ul and li for categories in "About myself" section. Languages, Frameworks, and Skills should be list items.
+You don't need to implement the detail modal window that requires JavaScript.
+You must stick to the design as much as possible (e.g., font, colors, images, text, margins) using the templates in Figma.
 Implement the button interactions (enable, hover, etc.).
 
 ## Built With
