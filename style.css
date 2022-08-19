@@ -1,11 +1,9 @@
 body {
   font-family: 'Poppins', sans-serif;
-  position: absolute;
-  left: 0;
-  top: 0;
   background-color: #ffff;
   background-image: url('./images/header-shapes mobile.png');
   background-repeat: no-repeat;
+  box-sizing: border-box;
   background-position-y: 120px;
 }
 
@@ -13,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
 }
 
 .mylogo a {
@@ -39,6 +38,14 @@ body {
   flex: 0 1 auto;
 }
 
+.container {
+  max-width: 375px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-top: 150px;
+}
+
 .primarytext {
   width: 300px;
   height: 150px;
@@ -52,7 +59,6 @@ body {
   line-height: 52px;
   display: flex;
   align-items: center;
-  position: absolute;
   flex: none;
   flex-grow: 0;
 }
@@ -64,8 +70,8 @@ body {
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
+  margin-top: 20px;
   line-height: 24px;
-  position: absolute;
   top: 370px;
   left: 24px;
   color: #344563;
@@ -82,18 +88,15 @@ body {
   font-family: 'Poppins', sans-serif;
   size: 16px;
   line-height: 24px;
-  position: absolute;
   top: 530px;
   left: 24px;
 }
 
 .socialmediaicons {
-  position: relative;
-  top: 580px;
-  left: -15px;
   list-style-type: none;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  margin-left: -38px;
   display: flex;
   width: 150px;
 }
