@@ -296,8 +296,8 @@ body {
 .button {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   padding: 12px;
   gap: 10px;
   width: 130px;
@@ -386,8 +386,8 @@ body {
 #resume-button {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   padding: 12px;
   gap: 10px;
   width: 170px;
