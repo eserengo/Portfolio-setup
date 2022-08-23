@@ -26,7 +26,7 @@
       <div class="headline-primary-text">
         <h1>I'm Federico Glad to see you!</h1>
       </div>
-      <div class="headline-body-text">
+      <div class="headline-bodytext">
         <p>I'm a software developer! I can help you build a product , feature or 
         website Look through some of my work and experience! If you like what 
         you see and have a project you need coded, don't hestiate to contact me.
@@ -44,8 +44,7 @@
           <li><a href="#"><img src="./images/Vector3.svg" alt="Peace"></a></li>
         </ul>
       </div>
-    </section>
-<!-- NEW FROM HERE -->    
+    </section>    
     <section class="work-grid-container">
       <h2 id="works-heading">Works</h2>
       <section class="work work1">
@@ -168,7 +167,7 @@
       <div id="about-myself-primary-text">
         <h2>About Myself</h2>
       </div>
-      <div id="about-myself-primary-bodytext">
+      <div id="about-myself-bodytext">
         <p>Hello I'm a software developer! I can help you build a product , 
         feature or website Look through some of my work and experience! 
         If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
@@ -184,22 +183,22 @@
         </ul>
       </div>
       <button type="button" id="resume-button">Get my resume</button>
-      <section class="skills">
+      <section>
         <div class="skill-list">
           <div id="ul-languages">
             <h5>Languages</h5><span class="chevron"><img src="./images/Icon-Chevron-Down-Larger.png" alt="Drop-down chevron"></span>
             <ul id="lang-list">
               <li id="javascript">
                 <div class="img"><img src="./images/javascript.png" alt="Javascript"></div>
-                <div>Javascript</div>
+                <p>Javascript</p>
               </li>
               <li id="html">
                 <div class="img"><img src="./images/html.png" alt="HTML"></div>
-                <div>HTML</div>
+                <p>HTML</p>
               </li>
               <li id="css">
                 <div class="img"><img src="./images/css.png" alt="CSS"></div>
-                <div>CSS</div>
+                <p>CSS</p>
               </li>
             </ul>
           </div>
@@ -207,17 +206,61 @@
             <h5>Frameworks</h5><span class="chevron"><img src="./images/Disabled.png" alt="Drop-down chevron"></span>
             <ul>
             </ul>
-            <span class="tab"></span>
           </div>
           <div id="ul-skills">
             <h5>Skills</h5><span class="chevron"><img src="./images/Disabled.png" alt="Drop-down chevron"></span>
             <ul>
             </ul>
-            <span class="tab"></span>
           </div>
         </div>
       </section>
     </section>
   </main>
+  <footer class="contact">
+    <div id="contact-primary-text">
+    <h2>Contact me</h2>
+    </div>
+    <div id="contact-bodytext">
+    <p>If you have an application you are interested in developing, a feature that you need build 
+    or a project that needs coding. I'd love to help with.
+    </p>
+    </div>
+    <form action="https://formspree.io/f/xzbwzzaj" method="POST">
+      <div>  
+        <label for="form-name"></label>
+        <input 
+        type="text" 
+        id="form-name" 
+        name="user-name" 
+        maxlength="30" 
+        placeholder="Enter your name"
+        required>
+      </div>  
+      <div>  
+        <label for="form-mail"></label>
+        <input 
+        type="email" 
+        id="form-mail" 
+        name="user-email"
+        autocomplete="on"
+        placeholder="Enter your E-Mail"
+        pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/"
+        required>
+      </div>
+      <div>  
+        <label for="form-mesagge"></label>
+        <textarea 
+        id="form-mesagge" 
+        name="user-message"
+        maxlength="500" 
+        placeholder="Write your message here"
+        required>
+        </textarea>
+      </div>
+      <div>
+        <button type="button" class="button">Get in touch</button>        
+      </div>  
+    </form>
+  </footer>
 </body>
 </html>

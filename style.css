@@ -56,13 +56,9 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 52px;
-  display: flex;
-  align-items: center;
-  flex: none;
-  flex-grow: 0;
 }
 
-.headline-body-text {
+.headline-bodytext {
   width: 327px;
   height: 146px;
   font-style: normal;
@@ -100,7 +96,6 @@ body {
   width: 150px;
 }
 
-/* NEW FROM HERE */
 #works-heading {
   display: none;
 }
@@ -159,18 +154,6 @@ body {
   width: 203px;
   height: 24px;
   list-style-type: none;
-}
-
-#about-myself-social-media-icons ul {
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  align-items: center;
-  width: 200px;
-  height: 40px;
-  margin-top: 15px;
-  list-style: none;
-  gap: 20px;
 }
 
 .worktext1 {
@@ -300,7 +283,7 @@ body {
   justify-content: flex-start;
   padding: 12px;
   gap: 10px;
-  width: 130px;
+  width: 140px;
   height: 48px;
   border: 1px solid #6070ff;
   border-radius: 8px;
@@ -355,12 +338,12 @@ body {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  color: #172b4d;
   display: flex;
   align-items: center;
-  color: #172b4d;
 }
 
-#about-myself-primary-bodytext {
+#about-myself-bodytext {
   width: 327px;
   height: 144px;
   font-family: 'Poppins', sans-serif;
@@ -381,6 +364,18 @@ body {
   line-height: 24px;
   color: #7f8cff;
   margin-top: 20px;
+}
+
+#about-myself-social-media-icons ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  margin-top: 15px;
+  list-style: none;
+  gap: 20px;
 }
 
 #resume-button {
@@ -457,18 +452,6 @@ body {
 #ul-skills {
   width: 327px;
   height: 72px;
-}
-
-#union {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  right: 26px;
-  top: calc(50% - 200px / 2);
-  border: none;
 }
 
 #ul-languages h5 {
@@ -576,8 +559,6 @@ body {
   color: #000;
 }
 
-.tab {
-  height: 1px;
-  width: 327px;
-  background: #dfe1e6;
+.contact {
+  margin-top: 600px;
 }
