@@ -320,7 +320,8 @@ body {
 
 #about-myself {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 30px;
   gap: 12px;
   width: 327px;
@@ -560,86 +561,83 @@ body {
 }
 
 .contact {
-  background-color: #4b5dfd;
-  background-image: url(./images/header-shapes-mobile.png);
+  background-image: url(./images/header-shapes-mobile.png), url(./images/Contact-me.png);
+  background-repeat: no-repeat;
+  background-position: right;
   margin-top: 600px;
   width: 375px;
   height: 779px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  }
+  flex-wrap: wrap;
+}
 
 #contact-primary-text {
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 52px;
-color: #ffffff;
-margin-top: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 52px;
+  color: white;
+  margin-top: 50px;
 }
 
 #contact-bodytext {
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 28px;
-text-align: center;
-color: #ebebff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  margin-top: -40px;
 }
 
 #form-name {
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 17px;
-line-height: 20px;
-display: flex;
-align-items: center;
-color: #172b4d;
-background-color: #ffffff;
-border: 1px solid #cfd8dc;
-border-radius: 8px;
-width: 327px;
-height: 48px;
-margin-top: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #b3bac5b3;
+  background-color: white;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 327px;
+  height: 48px;
+  margin-top: 30px;
 }
 
 #form-mail {
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 17px;
-line-height: 20px;
-display: flex;
-align-items: center;
-color: #172b4d;
-background-color: #ffffff;
-border: 1px solid #cfd8dc;
-border-radius: 8px;
-width: 327px;
-height: 48px;
-margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #b3bac5b3;
+  background-color: white;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 327px;
+  height: 48px;
+  margin-top: 20px;
 }
 
 #form-message {
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 17px;
-line-height: 20px;
-display: flex;
-align-items: center;
-color: #b3bac5b3;
-background-color: #ffffff;
-border: 1px solid #cfd8dc;
-border-radius: 8px;
-width: 327px;
-height: 170px;
-margin-top: 20px;
-padding-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #b3bac5b3;
+  background-color: white;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 327px;
+  height: 170px;
+  margin-top: 20px;
+  padding-top: 10px;
 }
 
 #get-in-touch-button {
