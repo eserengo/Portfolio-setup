@@ -561,7 +561,7 @@ body {
 }
 
 .contact {
-  background-image: url(./images/header-shapes-mobile.png), url(./images/Contact-me.png);
+  background-image: url(./images/contact-form-shapes-mobile.png), url(./images/Contact-me.png);
   background-repeat: no-repeat;
   background-position: right;
   margin-top: 600px;
@@ -580,7 +580,7 @@ body {
   font-size: 32px;
   line-height: 52px;
   color: white;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 #contact-bodytext {
