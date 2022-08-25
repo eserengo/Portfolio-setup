@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# ** My Portfolio **
+## My Portfolio
 
 ## Description of the project.
 This is my portofolio site.
@@ -40,6 +40,7 @@ First of all, thanks to:
 - My coding partners.
 - My Peer-Programing partners.
 - The code Reviewers.
+
 For their invaluable contributions and fellowship.
 
 Hat tip to anyone whose code was used.
