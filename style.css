@@ -1,10 +1,10 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: white;
   background-image: url(./images/header-shapes-mobile.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 100%;
+  background-color: white;
   width: 100%;
   height: 100vh;
   margin: 0 auto;
@@ -13,8 +13,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  align-items: flex-start;
-  min-width: 320px;
+  align-items: center;
 }
 
 img {
@@ -25,34 +24,18 @@ img {
   order: 1;
 }
 
-.toolbar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-}
-
-.my-logo a {
-  position: absolute;
-  width: 150px;
-  height: 20px;
+.toolbar > nav {
   font-family: 'Poppins', sans-serif;
-  top: 50px;
-  left: 100;
-  color: #6070ff;
-  font-style: normal;
-  font-weight: 1000;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10em;
+  margin: 1em 1em 1em 1em;
 }
 
-.union {
-  position: absolute;
-  top: 50px;
-  left: 320px;
+.icon {
+  display: block;
+  margin: auto;
 }
 
 .container {
@@ -328,7 +311,6 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  margin-top: -10%;
 }
 
 #about-myself-social-media-text {
@@ -460,7 +442,7 @@ img {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 28px;
   color: #ebebff;
 }
