@@ -3,6 +3,7 @@ body {
   background-image: url(./images/header-shapes-mobile.png);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: contain;
   background-size: 100%;
   background-color: white;
   width: 100%;
@@ -56,7 +57,10 @@ img {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  margin-top: 15%;
+}
+
+.headline-primary-text > h2 {
+  margin-top: -5vh;
 }
 
 .headline-bodytext {
@@ -286,12 +290,10 @@ img {
 }
 
 #about-myself {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 2%;
-  gap: 12px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  gap: 10px;
   border-radius: 0;
 }
 
@@ -419,11 +421,12 @@ img {
 .footer {
   background-image: url(./images/contact-form-shapes-mobile.png);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: right;
+  background-size: auto;
   background-color: #6070ff;
   display: flex;
   flex-flow: column wrap;
+  align-content: center;
   order: 3;
   margin-left: 1%;
 }
@@ -436,6 +439,7 @@ img {
   line-height: 52px;
   color: white;
   margin-top: 25%;
+  text-align: center;
 }
 
 #contact-bodytext {
@@ -445,6 +449,7 @@ img {
   font-size: 16px;
   line-height: 28px;
   color: #ebebff;
+  text-align: center;
 }
 
 #form-name {
@@ -458,6 +463,8 @@ img {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   margin-left: 5px;
+  width: 327px;
+  height: 48px;
 }
 
 #form-mail {
@@ -472,6 +479,8 @@ img {
   border-radius: 8px;
   margin-top: 10px;
   margin-left: 5px;
+  width: 327px;
+  height: 48px;
 }
 
 #form-message {
@@ -486,9 +495,40 @@ img {
   border-radius: 8px;
   margin-top: 10px;
   margin-left: 5px;
+  width: 327px;
+  height: 170px;
 }
 
 #get-in-touch-button {
   margin-top: 12px;
   margin-left: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .work {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #about-myself-bodytext {
+    width: 447px;
+    height: 102px;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+  }
+  #form-name {
+    width: 447px;
+  }
+  #form-mail {
+    width: 447px;
+  }
+  #form-message {
+    width: 447px;
+  }
+  #get-in-touch-button {
+    align-items: center;
+  }
 }
