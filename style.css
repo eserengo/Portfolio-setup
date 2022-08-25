@@ -23,6 +23,10 @@ img {
 
 .header {
   order: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .mobile-toolbar > nav {
@@ -290,9 +294,8 @@ img {
 }
 
 #about-myself {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: auto;
+  display: flex;
+  flex-flow: column wrap;
   gap: 10px;
   border-radius: 0;
 }
@@ -516,31 +519,45 @@ img {
     display: none;
   }
 
-.desktop-toolbar > nav {
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10em;
-  margin: 1em 1em 1em 1em;
-}
+  .desktop-toolbar > nav {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10em;
+    margin: 1em 1em 1em 1em;
+  }
 
-.icon {
-  display: block;
-  margin: auto;
-}
+  .desktop-toolbar-secondary {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4rem;
+    margin: 1.2rem 5rem;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    color: #344563;
+    list-style-type: none;
+  }
 
-.desktop-toolbar-secondary {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  align-content: space-between;
-  justify-content: space-between;
-}
+  .icon {
+    display: block;
+    margin: auto;
+  }
 
   .work {
     display: flex;
     flex-direction: row;
+  }
+
+  #about-myself {
+    display: flex;
+    flex-flow: row wrap;
   }
 
   #about-myself-bodytext {
@@ -548,20 +565,28 @@ img {
     height: 102px;
   }
 
+  .skill-list {
+    margin: 1em 1em 1em 4em;
+  }
+
   .footer {
     display: flex;
     align-items: center;
   }
+
   #form-name {
     width: 447px;
   }
+  
   #form-mail {
     width: 447px;
   }
+  
   #form-message {
     width: 447px;
   }
+  
   #get-in-touch-button {
-    align-items: center;
+    margin-left: 35%;
   }
 }
