@@ -574,19 +574,13 @@ img {
     align-items: center;
   }
 
-  #form-name {
-    width: 447px;
-  }
-  
-  #form-mail {
-    width: 447px;
-  }
-  
-  #form-message {
-    width: 447px;
-  }
-  
   #get-in-touch-button {
     margin-left: 35%;
+  }
+
+  #form-name,
+  #form-mail,
+  #form-message {
+    width: 447px;
   }
 }
