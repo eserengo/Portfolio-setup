@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" media="all">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,21 +12,34 @@
 </head>
 <body>
   <header class="header">
-    <div class="toolbar">
+    <div class="mobile-toolbar">
       <nav>
         <a href="#"><img src="./images/MyLogo.png" alt="logo" class="icon"></a>
         <a href="#"><img src="./images/Union.png" alt="hamburguer" class="icon"></a>
       </nav>
     </div>
+    <div class="desktop-toolbar">  
+      <nav>
+        <div>
+          <a href="#"><img src="./images/MyLogo.png" alt="logo" class="icon"></a>
+        </div>
+        <div class="desktop-toolbar-secondary">
+          <a href="#"><img src="./images/Portoflio.png" alt="portfolio" class="icon"></a>
+          <a href="#"><img src="./images/About.png" alt="about" class="icon"></a>
+          <a href="#"><img src="./images/Contact.png" alt="contact" class="icon"></a>
+        </div>
+      </nav>
+    </div>
   </header>        
   <main class="container">
-    <section>
+    <section class="intro">
       <div class="headline-primary-text">
-        <h1>I'm Federico Glad to see you!</h1>
+        <h1>I'm Federico</h1>
+        <h2>Glad to see you!</h2>
       </div>
       <div class="headline-bodytext">
-        <p>I'm a software developer! I can help you build a product , feature or 
-        website Look through some of my work and experience! If you like what 
+        <p>I'm a software developer! I can help you build a product, feature or 
+        website. Look through some of my work and experience! If you like what 
         you see and have a project you need coded, don't hestiate to contact me.
         </p>
       </div>
@@ -162,56 +175,57 @@
       </section>
     </section>
     <section id="about-myself">
-      <div id="about-myself-primary-text">
-        <h2>About Myself</h2>
-      </div>
-      <div id="about-myself-bodytext">
-        <p>Hello I'm a software developer! I can help you build a product , 
-        feature or website Look through some of my work and experience! 
-        If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
-      </div>
-      <div id="about-myself-social-media-text">LET'S CONNECT</div>
-      <div id="about-myself-social-media-icons">
-        <ul>
-          <li><a href="#"><img src="./images/Vector2.svg" alt="GitHub"></a></li>
-          <li><a href="#"><img src="./images/Linkedinicon.svg" alt="Linkedin"></a></li>
-          <li><a href="#"><img src="./images/Vector3.svg" alt="Peace"></a></li>
-          <li><a href="#"><img src="./images/Vector.svg" alt="Twitter"></a></li>
-          <li><a href="#"><img src="./images/Vector1.svg" alt="Mail"></a></li>
-        </ul>
-        <button type="button" class="button">Get my resume</button>
-      </div>  
-      <section>
-        <div class="skill-list">
-          <div id="ul-languages">
-            <h5>Languages</h5>
-            <ul id="lang-list">
-              <li id="javascript">
-                <div class="img"><img src="./images/javascript.png" alt="Javascript"></div>
-                <p>Javascript</p>
-              </li>
-              <li id="html">
-                <div class="img"><img src="./images/html.png" alt="HTML"></div>
-                <p>HTML</p>
-              </li>
-              <li id="css">
-                <div class="img"><img src="./images/css.png" alt="CSS"></div>
-                <p>CSS</p>
-              </li>
-            </ul>
-          </div>
-          <div id="ul-frameworks">
-            <h5>Frameworks</h5>
-            <ul>
-            </ul>
-          </div>
-          <div id="ul-skills">
-            <h5>Skills</h5>
-            <ul>
-            </ul>
-          </div>
+      <div class="about-myself">  
+        <div id="about-myself-primary-text">
+          <h2>About Myself</h2>
         </div>
-      </section>
+        <div id="about-myself-bodytext">
+          <p>Hello I'm a software developer! I can help you build a product, 
+          feature or website. Look through some of my work and experience! 
+          If you like what you see and have a project you need coded, don't 
+          hestiate to contact me.</p>
+        </div>
+        <div id="about-myself-social-media-text">LET'S CONNECT</div>
+        <div id="about-myself-social-media-icons">
+          <ul>
+            <li><a href="#"><img src="./images/Vector2.svg" alt="GitHub"></a></li>
+            <li><a href="#"><img src="./images/Linkedinicon.svg" alt="Linkedin"></a></li>
+            <li><a href="#"><img src="./images/Vector3.svg" alt="Peace"></a></li>
+            <li><a href="#"><img src="./images/Vector.svg" alt="Twitter"></a></li>
+            <li><a href="#"><img src="./images/Vector1.svg" alt="Mail"></a></li>
+          </ul>
+          <button type="button" class="button" id="about-myself-button">Get my resume</button>
+        </div>
+      </div>
+      <div class="skill-list">
+        <div id="ul-languages">
+          <h5>Languages</h5>
+          <ul id="lang-list">
+            <li id="javascript">
+              <div><img src="./images/javascript.png" alt="Javascript"></div>
+              <p>JavaScript</p>
+            </li>
+            <li id="html">
+              <div><img src="./images/html.png" alt="HTML"></div>
+              <p>HTML</p>
+            </li>
+            <li id="css">
+              <div><img src="./images/css.png" alt="CSS"></div>
+              <p>CSS</p>
+            </li>
+          </ul>
+        </div>
+        <div id="ul-frameworks">
+          <h5>Frameworks</h5>
+          <ul>
+          </ul>
+        </div>
+        <div id="ul-skills">
+          <h5>Skills</h5>
+          <ul>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer">
