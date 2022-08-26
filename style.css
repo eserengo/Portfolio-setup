@@ -1,20 +1,11 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background-image: url(./images/header-shapes-mobile.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  background-size: 100%;
   background-color: white;
   width: 100%;
   height: 100vh;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 img {
@@ -52,6 +43,12 @@ img {
   padding: 2%;
   gap: 12px;
   border-radius: 0;
+}
+
+.intro {
+  background-image: url(./images/header-shapes-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .headline-primary-text {
@@ -102,7 +99,7 @@ img {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: auto;
-  gap: 10px;
+  margin-bottom: 1em;
 }
 
 .work {
@@ -432,6 +429,7 @@ img {
   align-content: center;
   order: 3;
   margin-left: 1%;
+  border-top-left-radius: 3em;
 }
 
 #contact-primary-text {
@@ -441,7 +439,7 @@ img {
   font-size: 32px;
   line-height: 52px;
   color: white;
-  margin-top: 25%;
+  margin-top: 5em;
   text-align: center;
 }
 
@@ -507,31 +505,40 @@ img {
   margin-left: 5px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48em) {
   .desktop-toolbar {
     display: none;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48em) {
+  body {
+    background-color: #f4f5f7;
+  }
+
   .mobile-toolbar > nav,
   .icon {
     display: none;
   }
 
+  .icon {
+    display: block;
+    margin: auto;
+  }
+
   .desktop-toolbar > nav {
     font-family: 'Poppins', sans-serif;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 10em;
-    margin: 1em 1em 1em 1em;
+    gap: 30em;
   }
 
   .desktop-toolbar-secondary {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 2em;
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     font-style: normal;
@@ -545,19 +552,40 @@ img {
     list-style-type: none;
   }
 
-  .icon {
-    display: block;
-    margin: auto;
-  }
-
   .work {
     display: flex;
     flex-direction: row;
+    margin: auto;
+    margin: 1em 5em 1em 10em;
+    gap: 3em;
+    padding: 2em 2em 2em 2em;
+  }
+
+  .intro {
+    background-image: url(./images/Header-shapes-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 8em 10em 8em 10em;
   }
 
   #about-myself {
+    background-image: url(./images/about-myself-background-shape-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-flow: row wrap;
+    width: 100%;
+    border-top-right-radius: 10em;
+    padding: 5em 10em 5em 10em;
+  }
+
+  #about-myself-social-media-text,
+  #about-myself-social-media-icons,
+  #about-myself-button {
+    margin-top: 2em;
   }
 
   #about-myself-bodytext {
@@ -565,17 +593,103 @@ img {
     height: 102px;
   }
 
+  #lang-list {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 12px;
+  }
+
   .skill-list {
     margin: 1em 1em 1em 4em;
   }
 
+  #javascript {
+    width: 122px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  #javascript > p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  #html {
+    width: 122px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  #html > p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  #css {
+    width: 122px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  #css > p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  #ul-frameworks {
+    width: 100%;
+    border-bottom: 2px solid #cdcccc;
+  }
+
+  #ul-skills {
+    width: 100%;
+    border-bottom: 2px solid #cdcccc;
+  }
+
   .footer {
     display: flex;
+    flex-flow: column wrap;
     align-items: center;
+    justify-content: space-around;
+    border-top-left-radius: 12em;
+    background-image: url(./images/contact-form-background-shapes.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #6070ff;
+    width: 100%;
+  }
+
+  #contact-bodytext {
+    width: 569px;
+    height: 102px;
+    margin: -2em 1em 3em 1em;
+    padding-top: 1em;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   #get-in-touch-button {
     margin-left: 35%;
+    margin-bottom: 5em;
   }
 
   #form-name,
