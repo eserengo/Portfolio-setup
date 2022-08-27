@@ -29,6 +29,17 @@ img {
   margin: 1em 1em 1em 1em;
 }
 
+.logo {
+  animation: rotateLogo 5s ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rotateLogo {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 .icon {
   display: block;
   margin: auto;
@@ -49,6 +60,7 @@ img {
   background-image: url(./images/header-shapes-mobile.png);
   background-repeat: no-repeat;
   background-size: 100%;
+  transition: 0.7s ease-in-out;
 }
 
 .headline-primary-text {
@@ -109,6 +121,7 @@ img {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
+  transition: 0.5s ease-in-out;
 }
 
 .work h2 {
@@ -295,6 +308,7 @@ img {
   flex-flow: column wrap;
   gap: 10px;
   border-radius: 0;
+  transition: 0.5s ease-in-out;
 }
 
 #about-myself-primary-text {
@@ -430,6 +444,7 @@ img {
   order: 3;
   margin-left: 1%;
   border-top-left-radius: 3em;
+  transition: 0.5s ease-in-out;
 }
 
 #contact-primary-text {
@@ -532,7 +547,7 @@ img {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 30em;
+    gap: 50em;
   }
 
   .desktop-toolbar-secondary {
@@ -555,7 +570,6 @@ img {
   .work {
     display: flex;
     flex-direction: row;
-    margin: auto;
     margin: 1em 5em 1em 10em;
     gap: 3em;
     padding: 2em 2em 2em 2em;
@@ -564,7 +578,6 @@ img {
   .intro {
     background-image: url(./images/Header-shapes-desktop.png);
     background-repeat: no-repeat;
-    background-size: contain;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -580,6 +593,7 @@ img {
     width: 100%;
     border-top-right-radius: 10em;
     padding: 5em 10em 5em 10em;
+    overflow: hidden;
   }
 
   #about-myself-social-media-text,
@@ -618,6 +632,7 @@ img {
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
+    align-self: center;
   }
 
   #html {
@@ -675,6 +690,7 @@ img {
     background-size: cover;
     background-color: #6070ff;
     width: 100%;
+    overflow: hidden;
   }
 
   #contact-bodytext {
