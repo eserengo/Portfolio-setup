@@ -1,15 +1,31 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: white;
-  width: 100%;
-  height: 100vh;
-  margin: 0 auto;
-  padding: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
 img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  background-color: white;
   width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .header {
@@ -21,7 +37,6 @@ img {
 }
 
 .mobile-toolbar > nav {
-  font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,8 +80,6 @@ img {
 
 .headline-primary-text {
   color: #172b4d;
-  font-style: normal;
-  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -77,20 +90,16 @@ img {
 }
 
 .headline-bodytext {
-  font-style: normal;
   font-weight: 400;
-  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
 }
 
 .social-media-text {
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   color: #7f8cff;
-  font-family: 'Poppins', sans-serif;
   line-height: 24px;
 }
 
@@ -125,8 +134,6 @@ img {
 }
 
 .work h2 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -153,22 +160,13 @@ img {
 }
 
 .worktext1 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
   color: #344563;
 }
 
-.workcounter {
-  background: #c1c7d0;
-  border-radius: 50%;
-}
-
 .workrole {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
@@ -176,8 +174,6 @@ img {
 }
 
 .worktext {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
@@ -185,8 +181,6 @@ img {
 }
 
 .work-primary-text {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -206,8 +200,6 @@ img {
 }
 
 .workhtml {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -228,8 +220,6 @@ img {
 }
 
 .workcss {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -251,8 +241,6 @@ img {
 }
 
 .workjavascript {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -285,8 +273,6 @@ img {
 }
 
 .button:active {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -312,8 +298,6 @@ img {
 }
 
 #about-myself-primary-text {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -322,7 +306,6 @@ img {
 
 #about-myself-bodytext {
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -330,8 +313,6 @@ img {
 }
 
 #about-myself-social-media-text {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -356,8 +337,6 @@ img {
 
 #ul-languages h5 {
   height: 24px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   color: #000;
@@ -374,8 +353,6 @@ img {
   height: 24px;
   width: 250px;
   padding: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -389,8 +366,6 @@ img {
 #css {
   height: 24px;
   padding: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -404,8 +379,6 @@ img {
 #javascript {
   height: 24px;
   padding: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -417,16 +390,12 @@ img {
 }
 
 #ul-frameworks h5 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   color: #000;
 }
 
 #ul-skills h5 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   color: #000;
@@ -448,8 +417,6 @@ img {
 }
 
 #contact-primary-text {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 52px;
@@ -459,8 +426,6 @@ img {
 }
 
 #contact-bodytext {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
@@ -470,7 +435,6 @@ img {
 
 #form-name {
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
@@ -485,7 +449,6 @@ img {
 
 #form-mail {
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
@@ -501,7 +464,6 @@ img {
 
 #form-message {
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
@@ -542,7 +504,6 @@ img {
   }
 
   .desktop-toolbar > nav {
-    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -554,9 +515,7 @@ img {
     display: flex;
     flex-direction: row;
     gap: 2em;
-    font-family: 'Poppins', sans-serif;
     font-size: 2rem;
-    font-style: normal;
     font-weight: 700;
     line-height: 1.4rem;
     margin: 1.2rem 5rem;
@@ -593,7 +552,6 @@ img {
     width: 100%;
     border-top-right-radius: 10em;
     padding: 5em 10em 5em 10em;
-    overflow: hidden;
   }
 
   #about-myself-social-media-text,
@@ -621,32 +579,27 @@ img {
     width: 122px;
     height: 120px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
   }
 
   #javascript > p {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
-    align-self: center;
   }
 
   #html {
     width: 122px;
     height: 120px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
   }
 
   #html > p {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
@@ -656,14 +609,12 @@ img {
     width: 122px;
     height: 120px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
   }
 
   #css > p {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
@@ -690,7 +641,6 @@ img {
     background-size: cover;
     background-color: #6070ff;
     width: 100%;
-    overflow: hidden;
   }
 
   #contact-bodytext {
