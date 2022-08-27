@@ -11,6 +11,7 @@ html:focus-within {
 ul,
 ol {
   list-style: none;
+  list-style-type: none;
 }
 
 img {
@@ -109,10 +110,9 @@ body {
   flex-direction: row;
   padding: 0;
   gap: 20px;
-  list-style: none;
 }
 
-#works-heading {
+#work-heading {
   display: none;
 }
 
@@ -147,33 +147,28 @@ body {
   padding: 0%;
   gap: 12px;
   margin-top: -30px;
-  list-style-type: none;
 }
 
-.worktags ul {
+.worktag > ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
   padding: 5px;
-  list-style-type: none;
 }
 
-.worktext1 {
-  font-weight: 600;
-  font-size: 16px;
+.worktag > ul > li > div {
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
   line-height: 16px;
-  color: #344563;
+  letter-spacing: 0.03em;
+  color: #6070ff;
 }
 
-.workrole {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 16px;
-  color: #7a869a;
-}
-
-.worktext {
+.workframe > ul > li > div {
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
@@ -188,68 +183,6 @@ body {
   margin-top: -20px;
 }
 
-.worktag1 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 4px 12px;
-  width: 75%;
-  height: 75%;
-  background: #ebebff;
-  border-radius: 8px;
-}
-
-.workhtml {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  width: 75%;
-  height: 75%;
-  color: #6070ff;
-}
-
-.worktag2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 4px 12px;
-  width: 75%;
-  height: 75%;
-  background: #ebebff;
-  border-radius: 8px;
-}
-
-.workcss {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  width: 75%;
-  height: 75%;
-}
-
-.worktag3 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 4px 12px;
-  width: 75%;
-  height: 75%;
-  background: #ebebff;
-  border-radius: 8px;
-}
-
-.workjavascript {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  width: 75%;
-  height: 75%;
-}
-
 .button {
   display: flex;
   flex-direction: row;
@@ -260,11 +193,11 @@ body {
   border: 1px solid #6070ff;
   border-radius: 8px;
   background-color: white;
-  transition-duration: 0.6s;
   color: #6070ff;
   font-size: large;
   margin-bottom: 5px;
   margin-left: 5px;
+  transition: 0.7s ease-in-out;
 }
 
 .button:hover {
@@ -324,7 +257,6 @@ body {
   flex-direction: row;
   padding: 0;
   align-items: center;
-  list-style: none;
   gap: 20px;
 }
 
@@ -523,7 +455,6 @@ body {
     align-content: space-between;
     justify-content: space-between;
     color: #344563;
-    list-style-type: none;
   }
 
   .work {
