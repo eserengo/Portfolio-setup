@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## My Portfolio
+### My Portfolio
 
 ## Description of the project.
 This is my portofolio site.
@@ -22,16 +22,16 @@ Prerequisites:
 Web Browser (e.g. Firefox, Chrome, Edge).
 
 Setup:
--using git command line:
-  if you are using the git command line, please use this command in your terminal.
-    git clone git@github.com:eserengo/Portfolio-setup.git
--using the GitHub Desktop:
-  if you are using the desktop version of github, please  click on the green "code" button and click on "Open with GitHub Desktop".
+
+-using git command line: if you are using the git command line, please use this command in your terminal:
+git clone git@github.com:eserengo/Portfolio-setup.git
+
+-using the GitHub Desktop: if you are using the desktop version of github, please  click on the green "code" button and click on "Open with GitHub Desktop".
 
 Install:
 Install the linters in your local environment to mantain your code clean.
 
-Usage.
+Usage:
 Run tests.
 Deployment.
 
