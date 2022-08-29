@@ -126,11 +126,12 @@ body {
 .work {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   transition: 0.5s ease-in-out;
+  margin-bottom: 1em;
+  padding: 0.25em 0.25em 0.25em 0.25em;
 }
 
 .work h2 {
@@ -238,7 +239,6 @@ body {
 }
 
 #about-myself-bodytext {
-  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -281,35 +281,11 @@ body {
   padding: 0;
 }
 
-#html {
-  height: 24px;
-  width: 250px;
-  padding: 20px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  color: #253858;
-  background: #eee;
-  border-radius: 8px;
-}
-
+#javascript,
+#html,
 #css {
   height: 24px;
-  padding: 20px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  color: #253858;
-  background: #eee;
-  border-radius: 8px;
-}
-
-#javascript {
-  height: 24px;
+  width: 250px;
   padding: 20px;
   font-weight: bold;
   font-size: 16px;
@@ -343,7 +319,6 @@ body {
   flex-flow: column wrap;
   align-content: center;
   order: 3;
-  margin-left: 1%;
   border-top-left-radius: 3em;
   transition: 0.5s ease-in-out;
 }
@@ -365,20 +340,7 @@ body {
   text-align: center;
 }
 
-#form-name {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 20px;
-  color: #b3bac5b3;
-  background-color: white;
-  border: 1px solid #cfd8dc;
-  border-radius: 8px;
-  margin-left: 5px;
-  width: 327px;
-  height: 48px;
-}
-
+#form-name,
 #form-mail {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -388,8 +350,8 @@ body {
   background-color: white;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  margin-top: 10px;
   margin-left: 5px;
+  margin-bottom: 10px;
   width: 327px;
   height: 48px;
 }
@@ -403,7 +365,6 @@ body {
   background-color: white;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  margin-top: 10px;
   margin-left: 5px;
   width: 327px;
   height: 170px;
@@ -503,39 +464,11 @@ body {
   }
 
   .skill-list {
-    margin: 1em 1em 1em 4em;
+    margin: 2em 1em 1em 4em;
   }
 
-  #javascript {
-    width: 122px;
-    height: 120px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
-
-  #javascript > p {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 20px;
-  }
-
-  #html {
-    width: 122px;
-    height: 120px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
-
-  #html > p {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 20px;
-  }
-
+  #javascript,
+  #html,
   #css {
     width: 122px;
     height: 120px;
@@ -545,6 +478,8 @@ body {
     align-items: flex-start;
   }
 
+  #javascript > p,
+  #html > p,
   #css > p {
     font-weight: 500;
     font-size: 18px;
