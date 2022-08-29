@@ -14,7 +14,9 @@ ol {
   list-style-type: none;
 }
 
-img {
+img,
+img::before,
+img::after {
   max-width: 100%;
 }
 
@@ -265,6 +267,7 @@ body {
   flex-flow: column wrap;
   align-items: flex-start;
   justify-content: flex-start;
+  margin-bottom: 1em;
 }
 
 #ul-languages h5 {
@@ -297,13 +300,23 @@ body {
   border-radius: 8px;
 }
 
-#ul-frameworks h5 {
+#ul-frameworks {
+  width: 100%;
+  border-bottom: 2px solid #cdcccc;
+}
+
+#ul-frameworks > h5 {
   font-weight: 500;
   font-size: 20px;
   color: #000;
 }
 
-#ul-skills h5 {
+#ul-skills {
+  width: 100%;
+  border-bottom: 2px solid #cdcccc;
+}
+
+#ul-skills > h5 {
   font-weight: 500;
   font-size: 20px;
   color: #000;
@@ -438,7 +451,7 @@ body {
   #about-myself {
     background-image: url(./images/about-myself-background-shape-desktop.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     display: flex;
     flex-flow: row wrap;
     width: 100%;
@@ -504,7 +517,7 @@ body {
     border-top-left-radius: 12em;
     background-image: url(./images/contact-form-background-shapes.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     background-color: #6070ff;
     width: 100%;
   }
