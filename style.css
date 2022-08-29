@@ -34,33 +34,26 @@ body {
 .header {
   order: 1;
   display: flex;
-  align-items: center;
-  flex-direction: row;
+  flex-flow: column wrap;
   justify-content: space-between;
-}
-
-.mobile-toolbar > nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10em;
-  margin: 1em 1em 1em 1em;
 }
 
 .logo {
-  animation: rotateLogo 5s ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  float: left;
+  order: 1;
+  margin: 57px auto 0.5px 24px;
 }
 
-@keyframes rotateLogo {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.mobile-toolbar {
+  float: right;
+  order: 1;
+  margin: 50px 36px 0.5px auto;
 }
 
-.icon {
-  display: block;
-  margin: auto;
+@media only screen and (max-width: 48em) {
+  .desktop-toolbar {
+    display: none;
+  }
 }
 
 .container {
@@ -71,7 +64,6 @@ body {
   order: 2;
   padding: 2%;
   gap: 12px;
-  border-radius: 0;
 }
 
 .intro {
@@ -152,7 +144,7 @@ body {
   margin-top: -30px;
 }
 
-.worktag > ul {
+.worktag ul {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -388,19 +380,12 @@ body {
   margin-left: 5px;
 }
 
-@media only screen and (max-width: 48em) {
-  .desktop-toolbar {
-    display: none;
-  }
-}
-
 @media only screen and (min-width: 48em) {
   body {
     background-color: #f4f5f7;
   }
 
-  .mobile-toolbar > nav,
-  .icon {
+  .mobile-toolbar {
     display: none;
   }
 
@@ -409,26 +394,18 @@ body {
     margin: auto;
   }
 
-  .desktop-toolbar > nav {
+  .desktop-toolbar {
+    float: right;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 50em;
-  }
-
-  .desktop-toolbar-secondary {
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
+    gap: 2rem;
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.4rem;
-    margin: 1.2rem 5rem;
-    align-items: center;
-    align-content: space-between;
-    justify-content: space-between;
     color: #344563;
+    margin: 57px 24px;
   }
 
   .work {
@@ -442,6 +419,7 @@ body {
   .intro {
     background-image: url(./images/Header-shapes-desktop.png);
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -499,11 +477,7 @@ body {
     line-height: 20px;
   }
 
-  #ul-frameworks {
-    width: 100%;
-    border-bottom: 2px solid #cdcccc;
-  }
-
+  #ul-frameworks,
   #ul-skills {
     width: 100%;
     border-bottom: 2px solid #cdcccc;
