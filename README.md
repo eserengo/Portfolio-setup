@@ -6,7 +6,7 @@
 This is my portofolio site.
 
 ## Live Demo
-Please visit: https://eserengo.github.io/Portfolio-setup/
+https://eserengo.github.io/Portfolio-setup/
 
 ## Built With
 - HTML5
@@ -30,6 +30,13 @@ Setup:
 git clone git@github.com:eserengo/Portfolio-setup.git
 
 -using the GitHub Desktop: if you are using the desktop version of github, please  click on the green "code" button and click on "Open with GitHub Desktop".
+
+Install:
+Install the linters in your local environment to mantain your code clean.
+
+Usage:
+Run tests.
+Deployment.
 
 ## Acknowledgments
 First of all, thanks to:
