@@ -41,13 +41,13 @@ body {
 .logo {
   float: left;
   order: 1;
-  margin: 57px auto 0.5px 24px;
+  margin: 27px auto 0.5px 24px;
 }
 
 .mobile-toolbar {
   float: right;
   order: 1;
-  margin: 50px 36px 0.5px auto;
+  margin: 20px 36px 0.5px auto;
 }
 
 @media only screen and (max-width: 48em) {
@@ -62,7 +62,7 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   order: 2;
-  padding: 2%;
+  padding: 3px;
   gap: 12px;
 }
 
@@ -405,25 +405,26 @@ body {
     font-weight: 700;
     line-height: 1.4rem;
     color: #344563;
-    margin: 57px 24px;
-  }
-
-  .work {
-    display: flex;
-    flex-direction: row;
-    margin: 1em 5em 1em 10em;
-    gap: 3em;
-    padding: 2em 2em 2em 2em;
+    margin: 27px 24px;
   }
 
   .intro {
     background-image: url(./images/Header-shapes-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top left;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    margin: 8em 10em 8em 10em;
+    margin: 6em 10em 8em 10em;
+  }
+  
+  .work {
+    display: flex;
+    flex-direction: row;
+    margin: 1em 5em 1em 10em;
+    gap: 3em;
+    padding: 2em 2em 2em 2em;
   }
 
   #about-myself {
