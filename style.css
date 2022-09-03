@@ -36,18 +36,19 @@ body {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
+  background-color: white;
 }
 
 .logo {
   float: left;
   order: 1;
-  margin: 27px auto 0.5px 24px;
+  margin: 27px auto 0.5px 36px;
 }
 
 .mobile-toolbar {
   float: right;
   order: 1;
-  margin: 20px 36px 0.5px auto;
+  margin: 20px 40px 0.5px auto;
 }
 
 @media only screen and (max-width: 48em) {
@@ -391,18 +392,18 @@ body {
     font-weight: 700;
     line-height: 1.4rem;
     color: #344563;
-    margin: 27px 24px;
+    margin: 27px 36px;
   }
 
   .intro {
     background-image: url(./images/Header-shapes-desktop.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top left;
+    background-size: contain;
+    background-color: white;
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
-    margin: 6em 10em 8em 10em;
+    padding: 10em 18em 10em 18em;
+    margin-bottom: 5em;
   }
   
   .work {
