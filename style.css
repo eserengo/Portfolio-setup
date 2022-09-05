@@ -63,7 +63,6 @@ body {
   overflow: auto;
   background: #6070ff;
   mix-blend-mode: multiply;
-  position: fixed;
   top: 0;
   right: 0;
   width: 100%;
@@ -80,7 +79,6 @@ display: flex;
 justify-content: flex-start;
 align-items: center;
 color: #ffffff;
-text-decoration: none;
 padding: 0.5em 0;
 }
 
@@ -90,7 +88,8 @@ padding: 0.5em 0;
   background-color: transparent;
   width: 4em;
   height: 4em;
-  border: none;}
+  border: none;
+}
 
 #cancel-btn:hover,
 #cancel-btn:focus {
