@@ -63,9 +63,9 @@
     <section class="work-grid-container" id="portfolio-bookmark">
       <h2 id="work-heading">Works</h2>
       <section class="work">
-        <img src="./images/Snapshoot-portfolio-1.png" alt="Tonic">
+        <img src="./images/Snapshoot-portfolio-1.png" alt="Tonic" class="img-container">
         <div>
-          <h2>Tonic</h2>
+          <h2 class="work-header">Tonic</h2>
           <div class="workframe">
             <ul>
               <li><div><h5>CANOPY</h5></div></li>
@@ -85,14 +85,14 @@
             </ul>                        
           </div>
           <div>
-            <button type="button" class="button">See Project</button>
+            <button type="button" class="button see">See Project</button>
           </div>
         </div>
       </section>
       <section class="work">
-        <img src="./images/Snapshoot-portfolio-2.png" alt="Multi-post Stories">
+        <img src="./images/Snapshoot-portfolio-2.png" alt="Multi-post Stories" class="img-container">
         <div>
-          <h2>Multi-Post Stories</h2>
+          <h2 class="work-header">Multi-Post Stories</h2>
           <div class="workframe">
             <ul>
               <li><div><h5>FACEBOOK</h5></div></li>
@@ -112,14 +112,14 @@
             </ul>
           </div>
           <div>
-            <button type="button" class="button">See Project</button>
+            <button type="button" class="button see">See Project</button>
           </div>
         </div>
       </section>
       <section class="work">
-        <img src="./images/Snapshoot-portfolio-3.png" alt="Facebook 360">
+        <img src="./images/Snapshoot-portfolio-3.png" alt="Facebook 360" class="img-container">
         <div>
-          <h2>Facebook 360</h2>
+          <h2 class="work-header">Facebook 360</h2>
           <div class="workframe">
             <ul>
               <li><div><h5>FACEBOOK</h5></div></li>
@@ -139,14 +139,14 @@
             </ul>                        
           </div>
           <div>
-            <button type="button" class="button">See Project</button>
+            <button type="button" class="button see">See Project</button>
           </div>
         </div>
       </section>
       <section class="work">
-        <img src="./images/Snapshoot-portfolio-4.png" alt="Uber Navigation">
+        <img src="./images/Snapshoot-portfolio-4.png" alt="Uber Navigation class="img-container">
         <div>
-          <h2>Uber Navigation</h2>
+          <h2 class="work-header">Uber Navigation</h2>
           <div class="workframe">
             <ul>
               <li><div><h5>UBER</h5></div></li>
@@ -166,7 +166,7 @@
             </ul>
           </div>
           <div>
-            <button type="button" class="button">See Project</button>
+            <button type="button" class="button see">See Project</button>
           </div>
         </div>
       </section>
@@ -267,7 +267,56 @@
       </div>  
     </form>
   </footer>
+  <!--new from here-->
+  <div class="modal-container">
+    <div class="modal">
+      <section class="modal-box">
+        <div class="modal-header">
+          <div>
+            <h3 class="modal-title">Some content</h3>
+            <ul class="timeline">
+              <li>dsd</li>
+              <li>dsd</li>
+              <li>dsd</li>
+              <li>dsd</li>
+            </ul>
+          </div>
+          <img id="close-modal" src="./images/close-icon.svg" alt="Close icon">
+        </div>
+        <div class="modal-content">
+          <div class="img-container">
+            <img src="./images/Snapshoot-portfolio-1.png" alt="Modal picture">
+          </div>
+          <div class="desc-box">
+            <p class="modal-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas consectetur facilis atque
+            velit quia distinctio repellat! Aut vero aliquid harum consectetur accusamus placeat, minus ut, quod
+            aspernatur debitis inventore magni.</p>
+            <div class="accessory">
+              <div class="tech-box">
+                <ul class="tags">
+                  <li class="tag-item">html</li>
+                  <li class="tag-item">css</li>
+                  <li class="tag-item">javaScript</li>
+                </ul>
+              </div>
+              <div class="modal-buttons">
+                <a href="#" class="button img-btn live">
+                See live
+                <img src="./images/live.svg" alt="See live">
+                </a>
+                <a href="#" class="button img-btn source">
+                See Source
+                <img src="./images/source.svg" alt="See source" class="source-image">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!--new to here-->
   <script src="./JavaScript/mobileMenu.js"></script>
-  <script src="./JavaScript/main.js"></script>
+  <script src="./JavaScript/modal.js"></script>
 </body>
 </html>

@@ -405,6 +405,23 @@ body {
   margin-left: 5px;
 }
 
+.img-container {
+  flex: 50%;
+}
+
+.img-container > img {
+  height: 80%;
+  object-fit: cover;
+}
+
+.tag-item {
+  font-size: 0.75rem;
+  color: #4053fc;
+  background-color: #ebebff;
+  padding: 4px 12px 4px 12px;
+  border-radius: 8px;
+}
+
 @media only screen and (min-width: 48em) {
   body {
     background-color: #f4f5f7;
@@ -541,4 +558,121 @@ body {
   #form-message {
     width: 447px;
   }
+
+  .img-container > img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+/* new from here */
+.modal-container {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  background-color: rgba(128, 128, 128, 0.9);
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  max-width: min(700px, 90%);
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5em;
+  overflow-y: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.modal-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.timeline {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  color: #354664;
+  margin-bottom: 20px;
+}
+
+.modal .timeline li {
+  display: flex;
+  align-items: center;
+}
+
+.modal .img-container {
+  max-width: min(600px, 95%);
+  margin-inline: auto;
+}
+
+.img-container img {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.desc-box {
+  display: flex;
+  flex-direction: column;
+  padding-block: 1.5em;
+  font-size: 16px;
+  color: #354664;
+}
+
+.modal .tags {
+  padding-bottom: 15px;
+  border-bottom: 0.1px solid rgba(128, 128, 128, 0.2);
+}
+
+@media screen and (min-width: 40em) {
+  .modal-box {
+    height: 90vh;
+  }
+
+  .desc-box {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .modal-desc {
+    flex: 70%;
+  }
+
+  .accessory {
+    flex: 30%;
+  }
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.live,
+.source {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  width: 120px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.img-btn {
+  font-size: 12px;
 }
