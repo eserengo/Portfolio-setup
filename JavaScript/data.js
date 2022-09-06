@@ -1,32 +1,17 @@
 /* eslint-disable linebreak-style */
 const data = [
   {
-    id: 1,
-    name: 'Tonic',
-    img: 'Potfolio-setup/images/Snapshoot-portfolio-1.png',
-    description: 'A daily selection of privately personalized reads; no accounts or sign- ups required.',
-    technologies: 'html, css, javascript',
-  },
-  {
-    id: 2,
-    name: 'Multi-Post Stories',
-    img: 'Portfolio-setup/images/Snapshoot-portfolio-2.png',
-    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    technologies: 'html, css, javascript',
-  },
-  {
-    id: 3,
-    name: 'Facebook 360',
-    img: 'Portfolio-setup/images/Snapshoot-portfolio-3.png',
-    description: 'Exploring the future of media in Facebook first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    technologies: 'html, css, javascript',
-  },
-  {
-    id: 4,
-    name: 'Uber Navigation',
-    img: 'Portfolio-setup/images/Snapshoot-portfolio-4.png',
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    technologies: 'html, css, javascript',
+    title: 'Tonic',
+    company: 'CANOPY',
+    tech: 'Back End Dev',
+    year: 2013,
+    src: './images/Snapshoot-portfolio-1.png',
+    highlight: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    lang: ['html', 'css', 'javascript'],
+    live: 'https://eserengo.github.io/Portfolio-setup/',
+    source: 'https://github.com/eserengo/Portfolio-setup',
   },
 ];
+
 export default data;
