@@ -10,6 +10,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta name="description" content="Author: Federico Borzani, my portfolio website">
   <title>My Portfolio</title>
+  <script
+  src="https://kit.fontawesome.com/493f30a6ae.js"
+  crossorigin="anonymous"
+  ></script>
 </head>
 <body>
   <header class="header">
@@ -21,7 +25,7 @@
         <a href="#"><img src="./images/Union.png" alt="hamburguer menu" class="icon" id="mobile-menu-btn"></a>
       </div>
       <div class="desktop-toolbar">
-        <a href="#portfolio-bookmark"><img src="./images/Portoflio.png" alt="portfolio" class="icon"></a>
+        <a href="#portfolio"><img src="./images/Portoflio.png" alt="portfolio" class="icon"></a>
         <a href="#about-myself"><img src="./images/About.png" alt="about" class="icon"></a>
         <a href="#contact-primary-text"><img src="./images/Contact.png" alt="contact" class="icon"></a>
       </div>
@@ -29,7 +33,7 @@
     <nav id="mobile-menu">
       <i id="cancel-btn"><img src="./images/Icon-Cancel.png" id="cancel-icon" alt="close menu button"></i>
       <div class="menu">
-        <a href="#portfolio-bookmark">Portfolio</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#about-myself">About</a>
         <a href="#contact-primary-text">Contact</a>
       </div>
@@ -60,117 +64,8 @@
         </ul>
       </div>
     </section>    
-    <section class="work-grid-container" id="portfolio-bookmark">
-      <h2 id="work-heading">Works</h2>
-      <section class="work">
-        <img src="./images/Snapshoot-portfolio-1.png" alt="Tonic" class="img-container">
-        <div>
-          <h2 class="work-header">Tonic</h2>
-          <div class="workframe">
-            <ul>
-              <li><div><h5>CANOPY</h5></div></li>
-              <li><div><h5>Back End Dev</h5></div></li>
-              <li><div><h5>2013</h5></div></li>
-            </ul>
-          </div>
-          <div class="work-primary-text">
-            <p>A daily selection of privately personalized reads; no accounts or 
-            sign-ups required.</p>
-          </div>
-          <div class="worktag">
-            <ul>
-              <li><div>html</div></li>
-              <li><div>css</div></li>
-              <li><div>javascript</div></li>
-            </ul>                        
-          </div>
-          <div>
-            <button type="button" class="button see">See Project</button>
-          </div>
-        </div>
-      </section>
-      <section class="work">
-        <img src="./images/Snapshoot-portfolio-2.png" alt="Multi-post Stories" class="img-container">
-        <div>
-          <h2 class="work-header">Multi-Post Stories</h2>
-          <div class="workframe">
-            <ul>
-              <li><div><h5>FACEBOOK</h5></div></li>
-              <li><div><h5>Full Stack Dev</h5></div></li>
-              <li><div><h5>2015</h5></div></li>
-            </ul>
-          </div>
-          <div class="work-primary-text">
-            <p>Experimental content creation feature that allows users to add to 
-              an existing story over the course of a day without spamming their friends.</p>
-          </div>
-          <div class="worktag">
-            <ul>
-              <li><div>html</div></li>
-              <li><div>css</div></li>
-              <li><div>javascript</div></li>
-            </ul>
-          </div>
-          <div>
-            <button type="button" class="button see">See Project</button>
-          </div>
-        </div>
-      </section>
-      <section class="work">
-        <img src="./images/Snapshoot-portfolio-3.png" alt="Facebook 360" class="img-container">
-        <div>
-          <h2 class="work-header">Facebook 360</h2>
-          <div class="workframe">
-            <ul>
-              <li><div><h5>FACEBOOK</h5></div></li>
-              <li><div><h5>Full Stack Dev</h5></div></li>
-              <li><div><h5>2015</h5></div></li>
-            </ul>
-          </div>
-          <div class="work-primary-text">
-            <p>Exploring the future of media in Facebook's first Virtual Reality app; 
-             a place to discover and enjoy 360 photos and videos on Gear VR.</p>
-          </div>
-          <div class="worktag">
-            <ul>
-              <li><div>html</div></li>
-              <li><div>css</div></li>
-              <li><div>javascript</div></li>
-            </ul>                        
-          </div>
-          <div>
-            <button type="button" class="button see">See Project</button>
-          </div>
-        </div>
-      </section>
-      <section class="work">
-        <img src="./images/Snapshoot-portfolio-4.png" alt="Uber Navigation class="img-container">
-        <div>
-          <h2 class="work-header">Uber Navigation</h2>
-          <div class="workframe">
-            <ul>
-              <li><div><h5>UBER</h5></div></li>
-              <li><div><h5>Lead Developer</h5></div></li>
-              <li><div><h5>2018</h5></div></li>
-            </ul>
-          </div>
-          <div class="work-primary-text">
-            <p>A smart assistant to make driving more safe, efficient, 
-            and fun by unlocking your most expensive computer: your car.</p>
-          </div>
-          <div class="worktag">
-            <ul>
-              <li><div>html</div></li>
-              <li><div>css</div></li>
-              <li><div>javascript</div></li>
-            </ul>
-          </div>
-          <div>
-            <button type="button" class="button see">See Project</button>
-          </div>
-        </div>
-      </section>
-    </section>
+    <div class="recent-work" id="portfolio"></div>
+    <div class="project-popup-container"></div>
     <section id="about-myself">
       <div class="about-myself">  
         <div id="about-myself-primary-text">
@@ -267,55 +162,24 @@
       </div>  
     </form>
   </footer>
-  <!--new from here-->
-  <div class="modal-container">
-    <div class="modal">
-      <section class="modal-box">
-        <div class="modal-header">
-          <div>
-            <h3 class="modal-title">Some content</h3>
-            <ul class="timeline">
-              <li>dsd</li>
-              <li>dsd</li>
-              <li>dsd</li>
-              <li>dsd</li>
-            </ul>
-          </div>
-          <img id="close-modal" src="./images/close-icon.svg" alt="Close icon">
-        </div>
-        <div class="modal-content">
-          <div class="img-container">
-            <img src="./images/Snapshoot-portfolio-1.png" alt="Modal picture">
-          </div>
-          <div class="desc-box">
-            <p class="modal-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas consectetur facilis atque
-            velit quia distinctio repellat! Aut vero aliquid harum consectetur accusamus placeat, minus ut, quod
-            aspernatur debitis inventore magni.</p>
-            <div class="accessory">
-              <div class="tech-box">
-                <ul class="tags">
-                  <li class="tag-item">html</li>
-                  <li class="tag-item">css</li>
-                  <li class="tag-item">javaScript</li>
-                </ul>
-              </div>
-              <div class="modal-buttons">
-                <a href="#" class="button img-btn live">
-                See live
-                <img src="./images/live.svg" alt="See live">
-                </a>
-                <a href="#" class="button img-btn source">
-                See Source
-                <img src="./images/source.svg" alt="See source" class="source-image">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span><i class="fa-solid fa-xmark fa-2xl"></i></span>
+        <h2>Project</h2>
+        <ul class="modal-list">
+          <li class="modal-list-item">HTML/CSS</li>
+          <li class="modal-list-item">Ruby on rails</li>
+          <li class="modal-list-item">Javascript</li>
+        </ul>
+      </div>
+      <div class="modal-body">
+        <img src="./images/Snapshoot-portfolio-1.png" alt="Portfolio Snapshot">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio reprehenderit officiis dolore sed dicta amet hic quos consequuntur architecto dolorem eaque molestiae nisi, eum accusantium error culpa, atque recusandae temporibus similique cupiditate! Similique neque at doloremque voluptate non dolorum eum, culpa sint eos dolores. Eum nam eaque consequuntur amet architecto dicta rem enim odio atque est modi a odit, ipsum necessitatibus ex?</p>
+        <button type="button" class="modal-button">See live<i class="fa-solid fa-arrow-up-right-from-square" data-fa-transform="grow-15 right-100"></i></button><button type="button" class="modal-button">See source<i class="modal-icon fa-brands fa-github" data-fa-transform="grow-15 right-90"></i></button>
+      </div>
     </div>
   </div>
-  <!--new to here-->
   <script src="./JavaScript/mobileMenu.js"></script>
   <script src="./JavaScript/modal.js"></script>
 </body>
